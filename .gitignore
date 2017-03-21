@@ -2,3 +2,5 @@
 *.ip
 __pycache__
 config
+scrappyddns.conf
+token.list

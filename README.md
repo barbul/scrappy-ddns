@@ -62,7 +62,9 @@ Scary disclaimers aside, this may be a good choice for home networks.
 
 The script depends on **Python 3.4 or higher** and the **Flask** web microframework, so make sure those are installed. Next, clone the Git repo or download and extract the ZIP to a suitable directory that also contains your `token.list` file.
 
-Modify the `scrappyddns.conf` file to include your user and application keys for Pushover notifications. Change other settings there as you wish. Note that the script needs read/write access to a directory that it can use to store the most recent IP addresses it has learned for each token. By default, the current directory will be used for this, but you can specify a different one in the `scrappyddns.conf` file.
+Copy `scrappyddns.sample.conf` to `scrappyddns.conf` and modify the file to include your user and application keys for Pushover notifications. Change other settings there as you wish. Note that the script needs read/write access to a directory that it can use to store the most recent IP addresses it has learned for each token. By default, the current directory will be used for this, but you can specify a different one in the `scrappyddns.conf` file.
+
+Copy and edit `token.sample.list` to `token.list`
 
 Finally, change directory to the location of the `scrappyddns.conf` and `token.list` files and start the service with a command like:
 ```
